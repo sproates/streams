@@ -73,7 +73,7 @@ Usage
         return x[0] * x[1];
     });
 
-    // Σ(gregoryLeibnizProducts) ~= 
+    // Σ(gregoryLeibnizProducts) ~= π/4
     var piApprox = gregoryLeibnizProducts.sumTerms(4);
 
     // 3.1416926435905346
