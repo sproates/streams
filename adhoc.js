@@ -130,14 +130,13 @@ console.log(zip1.get(3));
 
 console.log('\n\nSum\n\n');
 
-var s = Stream.sum(Stream.from(0), 0);
+var s = Stream.sum(Stream.from(1), 0);
 
 console.log(s.get(0));
 console.log(s.get(1));
 console.log(s.get(2));
 console.log(s.get(3));
-console.log(s.get(3));
-console.log(s.get(3));
+console.log(s.get(4));
 
 /*
 var x = integers.take(5);
@@ -174,6 +173,12 @@ var alternatingSignOnes = Stream.iterate(1, function(previous) {
 var gregoryLeibnizProducts = oddInverses.zip(alternatingSignOnes).map(function(value) {
     return value[0] * value[1];
 });
+
+console.log(gregoryLeibnizProducts.get(0));
+console.log(gregoryLeibnizProducts.get(1));
+console.log(gregoryLeibnizProducts.get(2));
+console.log(gregoryLeibnizProducts.get(3));
+console.log(gregoryLeibnizProducts.get(4));
 
 var piApprox = gregoryLeibnizProducts.sumTerms(4);
 
